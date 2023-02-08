@@ -1,0 +1,39 @@
+lista general de comandos y opciones básicos de Git en un formato profesional y detallado:
+Inicialización:
+    • git init: Este comando inicializa un nuevo repositorio Git en el directorio actual. Después de ejecutar este comando, el directorio actual se convierte en un repositorio Git y puede comenzar a seguir y controlar versiones de los archivos en el directorio.
+    • git clone [url]: Este comando permite clonar un repositorio Git existente en una URL en un nuevo directorio con el mismo nombre que el repositorio remoto.
+    • git clone [url] [directorio]: Este comando permite clonar un repositorio Git existente en una URL en un nuevo directorio con un nombre especificado.
+Seguimiento de archivos:
+    • git add [archivo]: Este comando permite agregar un archivo o todos los cambios en el directorio actual a la "zona de preparación" para el próximo commit. La "zona de preparación" es una especie de área temporal donde se almacenan los cambios que desea confirmar en el repositorio.
+    • git rm [archivo]: Este comando permite eliminar un archivo del repositorio Git y la zona de seguimiento. Después de ejecutar este comando, el archivo ya no estará disponible en versiones futuras del repositorio.
+    • git mv [origen] [destino]: Este comando permite mover o renombrar un archivo en el repositorio Git y la zona de seguimiento. Después de ejecutar este comando, el archivo estará disponible en versiones futuras del repositorio con su nuevo nombre o ubicación.
+Confirmación:
+    • git commit -m "mensaje": Este comando permite confirmar los cambios en la zona de preparación en el repositorio con un mensaje de confirmación especificado. Después de ejecutar este comando, los cambios se registrarán en el repositorio y estarán disponibles en versiones futuras del mismo.
+    • git commit -a -m "mensaje": Este comando permite confirmar todos los cambios actuales en el repositorio, incluyendo aquellos que ya están seguidos, con un mensaje de confirmación especificado.
+    • git commit --amend -m "mensaje": Este comando permite modificar el último commit con un nuevo mensaje de confirmación especificado. Esto es útil cuando se han realizado cambios adicionales después de #
+
+Fusiones y rebase: 
+git merge [nombre de rama]: Fusiona la rama especificada con la rama actual. 
+git rebase [nombre de rama]: Reaplica los cambios de la rama especificada en la rama actual.
+
+Sincronización con un repositorio remoto: 
+git fetch [nombre de repositorio]: Descarga los cambios de un repositorio remoto, pero no los integra en la rama actual. 
+git pull [nombre de repositorio] [nombre de rama]: Descarga y fusiona los cambios de un repositorio remoto y una rama específicos en la rama actual. 
+git push [nombre de repositorio] [nombre de rama]: Sube los cambios de la rama actual a un repositorio remoto y una rama específica.
+Etiquetado: 
+git tag [nombre de etiqueta]: Crea una etiqueta con el nombre especificado en la confirmación actual. 
+git tag -d [nombre de etiqueta]: Elimina una etiqueta con el nombre especificado. 
+git show [nombre de etiqueta]: Muestra información sobre una etiqueta específica, incluyendo el autor, la fecha y el mensaje de confirmación.
+
+Ramas y fusiones: 
+git branch [nombre]: Este comando permite crear una nueva rama en el repositorio. Después de ejecutar este comando, se pueden realizar cambios en la nueva rama sin afectar la rama principal.
+git checkout [nombre]: Este comando permite cambiar a una rama específica en el repositorio. Después de ejecutar este comando, se pueden realizar cambios en la rama seleccionada.
+
+git merge [nombre]: Este comando permite combinar la rama especificada con la rama actual. Después de ejecutar este comando, los cambios de la rama especificada se incorporarán a la rama actual.
+Historial y comparación: git log: Este comando permite ver el historial de confirmaciones en el repositorio.
+git diff [origen] [destino]: Este comando permite comparar los cambios entre dos versiones específicas del repositorio o entre el repositorio y la zona de preparación.
+Sincronización con un repositorio remoto: git clone [url]: Este comando permite clonar un repositorio remoto a la máquina local. Después de ejecutar este comando, se tendrá una copia completa del repositorio en la máquina local.
+
+git push [nombre]: Este comando permite enviar los cambios locales al repositorio remoto. Después de ejecutar este comando, los cambios se reflejarán en el repositorio remoto.
+
+git pull: Este comando permite descargar los cambios del repositorio remoto a la máquina local. Después de ejecutar este comando, se tendrán los últimos cambios en la máquina local.
