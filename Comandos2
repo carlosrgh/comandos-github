@@ -1,0 +1,16 @@
+Git es una herramienta esencial para el control de versiones de proyectos de software. Las ramas en Git se usan para desarrollar funcionalidades aisladas sin afectar la rama principal o master.
+
+
+"-git checkout -b R1" crea una nueva rama llamada R1 y cambia a esa rama. "-git branch R1" crea una nueva rama llamada R1 pero no cambia a ella. Para cambiar a la rama R1 se usa "git checkout R1". "git head R1" muestra la posición actual del repositorio en la rama R1.
+
+
+"git checkout master" cambia de la rama actual a la rama principal (master). "git merge R1" combina los cambios realizados en la rama R1 con la rama master. Esto es útil cuando se han desarrollado nuevas funcionalidades en una rama y se desea incluir estos cambios en la rama principal.
+
+
+Cuando se trabaja en una rama aparte, como en "git checkout -b R1", es importante mantener la rama principal limpia y solo agregar el código que funcione a la rama principal, usando "git merge master" después de verificar que el código es funcional.
+
+
+"git reset" se usa para deshacer cambios no deseados, devolver un repositorio a un estado anterior o eliminar commits no deseados. Por otro lado, "git rebase" se utiliza para combinar commits de diferentes ramas y crear una nueva rama temporal con una historia de commits lineal.
+
+
+"git checkout CR3 A.tet" cambia el archivo A.tet en la rama CR3. "git checkout HEAD -1 A.tet" cambia el archivo A.tet al último commit. "HEAD -2" cambiaría el archivo al segundo último commit y "HEAD -3" al tercer último commit.
